@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/input_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Input Value:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/input_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_label"
+        android:layout_marginTop="8dp"
+        android:hint="Enter value to convert"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/source_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_edit_text"
+        android:layout_marginTop="16dp"
+        android:text="Source Unit:"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/source_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/source_label"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/target_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/source_spinner"
+        android:layout_marginTop="16dp"
+        android:text="Target Unit:"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/target_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/target_label"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/target_spinner"
+        android:layout_marginTop="32dp"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/output_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convert_button"
+        android:layout_marginTop="32dp"
+        android:text="Output Value:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/output_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/output_label"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal"
+        android:enabled="false"
+        android:hint="Result" />
+
+</RelativeLayout>
